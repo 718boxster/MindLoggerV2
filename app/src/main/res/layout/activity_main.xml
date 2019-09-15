@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FFFFFF">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF">
+            <ImageView
+                android:id="@+id/top_img"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="1050px"
+                android:scaleType="fitXY"
+                android:src="@drawable/main_top_img"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="상담이 필요할 때,\n공감과 위로로 귀기울입니다."
+                android:textSize="70px"
+                android:paddingLeft="50px"
+                android:layout_marginBottom="170px"
+                android:textStyle="bold"
+                android:layout_marginTop="680px"
+                android:tag="B"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="180px"
+                android:layout_marginTop="960px"
+                android:padding="10px">
+                <EditText
+                    android:layout_marginLeft="50px"
+                    android:layout_marginRight="50px"
+                    android:layout_width="match_parent"
+                    android:layout_height="120px"
+                    android:background="@drawable/white_rounded_box"
+                    android:hint="어떤 상담이 필요하세요?"
+                    android:textSize="45px"
+                    android:padding="25px"
+                    android:layout_centerVertical="true"
+                    android:elevation="10px" />
+
+                <ImageView
+                    android:layout_width="70px"
+                    android:layout_height="70px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="75px"
+                    android:elevation="10px"
+                    android:src="@drawable/find_icon" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="100px"
+            android:layout_marginBottom="100px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="기분이 어떠신가요?"
+            style="@style/TitleStyle"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/category_list"
+            android:layout_width="match_parent"
+            android:layout_height="380px"
+            android:paddingLeft="10px"
+            android:paddingRight="10px"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20px"
+            android:background="#e2e2e2"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="70px"
+                android:text="우울할 때 추천하는 상담사"
+                style="@style/TitleStyle"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="80px"
+                android:layout_centerVertical="true"
+                android:src="@drawable/right_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="70px"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/a1_1"
+            android:layout_width="match_parent"
+            android:layout_height="650px"
+            android:scaleType="fitXY"
+            android:src="@drawable/img1"/>
+
+        <LinearLayout
+            android:id="@+id/a1_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="60px"
+            android:paddingBottom="30px"
+            android:paddingRight="90px"
+            android:paddingLeft="90px">
+            <ImageView
+                android:id="@+id/profile1"
+                style="@style/CircleImagePadding"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="우울할 땐 혼자 시간을 보내는 것보다 함께\n이야기를 나눠보세요"
+                    style="@style/TitleStyle"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/SubTitleStyle"
+                    android:text="상담사 이미영·조회수:2.9만·좋아요:4.2만"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20px"
+            android:background="#e2e2e2"/>
+
+
+
+
+
+        <ImageView
+            android:id="@+id/a2_1"
+            android:layout_width="match_parent"
+            android:layout_height="700px"
+            android:scaleType="fitXY"
+            android:src="@drawable/img2"/>
+
+        <LinearLayout
+            android:id="@+id/a2_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="60px"
+            android:paddingBottom="30px"
+            android:paddingRight="90px"
+            android:paddingLeft="90px">
+            <ImageView
+                android:id="@+id/profile2"
+                style="@style/CircleImagePadding"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="우울할 땐 혼자 시간을 보내는 것보다 편하게\n이야기를 나눌 수 있으면 어떨까요?"
+                    style="@style/TitleStyle"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/SubTitleStyle"
+                    android:text="상담사 이미영·조회수:2.9만·좋아요:4.2만"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20px"
+            android:background="#e2e2e2"/>
+
+
+
+
+
+        <ImageView
+            android:id="@+id/a3_1"
+            android:layout_width="match_parent"
+            android:layout_height="550px"
+            android:scaleType="fitXY"
+            android:src="@drawable/img3"/>
+
+        <LinearLayout
+            android:id="@+id/a3_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="60px"
+            android:paddingBottom="30px"
+            android:paddingRight="90px"
+            android:paddingLeft="90px">
+            <ImageView
+                android:id="@+id/profile3"
+                style="@style/CircleImagePadding"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="우울할 땐 혼자 시간을 보내는 것보다 편하게\n이야기를 나눌 수 있으면 어떨까요?"
+                    style="@style/TitleStyle"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/SubTitleStyle"
+                    android:text="상담사 이미영·조회수:2.9만·좋아요:4.2만"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20px"
+            android:background="#e2e2e2"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="70px"
+                android:text="외로울 때 추천하는 상담사"
+                style="@style/TitleStyle"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="80px"
+                android:layout_centerVertical="true"
+                android:src="@drawable/right_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="70px"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/a4_1"
+            android:layout_width="match_parent"
+            android:layout_height="550px"
+            android:scaleType="fitXY"
+            android:src="@drawable/img4"/>
+
+        <LinearLayout
+            android:id="@+id/a4_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="60px"
+            android:paddingBottom="30px"
+            android:paddingRight="90px"
+            android:paddingLeft="90px">
+            <ImageView
+                android:id="@+id/profile4"
+                style="@style/CircleImagePadding"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="행복을 전하는 심리 상담그룹 모맨트입니다.\n다문화 가정 전문으로 상담합니다^^"
+                    style="@style/TitleStyle"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/SubTitleStyle"
+                    android:text="상담사 모맨트·조회수:2.9만·좋아요:4.2만"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20px"
+            android:background="#e2e2e2"/>
+
+
+
+
+        <ImageView
+            android:id="@+id/a5_1"
+            android:layout_width="match_parent"
+            android:layout_height="550px"
+            android:scaleType="fitXY"
+            android:src="@drawable/img5"/>
+
+        <LinearLayout
+            android:id="@+id/a5_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="60px"
+            android:paddingBottom="30px"
+            android:paddingRight="90px"
+            android:paddingLeft="90px">
+            <ImageView
+                android:id="@+id/profile5"
+                style="@style/CircleImagePadding"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="바리스타 상담가 최철민입니다\n편히 쉬었다가도 괜찮습니다"
+                    style="@style/TitleStyle"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/SubTitleStyle"
+                    android:text="상담사 최철민·조회수:1.3만·좋아요:2.4만"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20px"
+            android:background="#e2e2e2"/>
+
+
+
+        <ImageView
+            android:id="@+id/a6_1"
+            android:layout_width="match_parent"
+            android:layout_height="550px"
+            android:scaleType="fitXY"
+            android:src="@drawable/img6"/>
+
+        <LinearLayout
+            android:id="@+id/a6_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="60px"
+            android:paddingBottom="30px"
+            android:paddingRight="90px"
+            android:paddingLeft="90px">
+            <ImageView
+                android:id="@+id/profile6"
+                style="@style/CircleImagePadding"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="행복을 전하는 심리 상담그룹 모맨트입니다.\n다문화 가정 전문으로 상담합니다^^"
+                    style="@style/TitleStyle"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/SubTitleStyle"
+                    android:text="상담사 모맨트·조회수:2.9만·좋아요:4.2만"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

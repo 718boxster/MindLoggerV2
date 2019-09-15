@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Feed">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="730px">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="730px"
+                android:scaleType="fitXY"
+                android:src="@drawable/img1" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200px"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/transparent_gradient" />
+
+            <TextView
+                style="@style/SubTitleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="50px"
+                android:text="우울증 전문 상담사 이미영" />
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_margin="50px"
+                android:src="@drawable/ic_arrow_back_white_48dp" />
+
+            <ImageView
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="50px"
+                android:layout_marginRight="140px"
+                android:src="@drawable/ic_favorite_white_48dp" />
+
+            <ImageView
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_alignParentRight="true"
+                android:layout_margin="50px"
+                android:src="@drawable/ic_more_vert_white_48dp" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/TitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:paddingLeft="50px"
+            android:text="우울할 땐 혼자 시간을 보내는 것보다\n함께 이야기를 나눠보세요"
+            android:textSize="55px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5px"
+            android:layout_marginTop="50px"
+            android:layout_marginBottom="90px"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="120px"
+                android:layout_height="5px"
+                android:background="#000000" />
+
+            <View
+                android:layout_width="200px"
+                android:layout_height="5px"
+                android:background="#d2d2d2" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50px"
+            android:text="서울 강남구\n\n기본 1시간\n\n한국어, 영어로 진행"
+            android:textSize="40px" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="170px"
+            android:layout_marginTop="50px"
+            android:paddingLeft="50px"
+            android:paddingRight="50px">
+
+            <TextView
+                android:id="@+id/introduce"
+                style="@style/TitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="상담사 소개"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15px"
+                android:text="문의하기"
+                android:textSize="35px"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/introduce" />
+
+            <ImageView
+                android:layout_width="130px"
+                android:layout_height="130px"
+                android:paddingLeft="20px"
+                android:paddingBottom="20px"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50px"
+            android:paddingRight="50px"
+            android:text="마인드리셋을 전문으로, 10년이상의 사업 및 강의, 멘토링, 상담, 제자양성 경력을 보유하고 있습니다. 따뜻한 고민 잘 해결해주는 누나입니다."
+            android:textSize="35px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="40px"
+            android:layout_marginRight="50px"
+            android:layout_marginBottom="40px"
+            android:background="#d2d2d2" />
+
+        <TextView
+            style="@style/TitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40px"
+            android:paddingLeft="50px"
+            android:text="상담사 후기" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="50px"
+                android:text="♥"
+                android:textColor="#F4426F"
+                android:textSize="40px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.0"
+                android:textColor="#F4426F"
+                android:textSize="40px" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/TitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50px"
+            android:text="Rachel Sherilyn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50px"
+            android:text="2019.07월\n"
+            android:textSize="40px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50px"
+            android:paddingRight="50px"
+            android:text="누구에게도 말하지 못하는 내향적인 성격도 그렇고 제 자신의 문제라고만 생각해서 혼자 앓기를 2년..너무 힘들다는 생각에 선생님을 만나 상담하기를 벌써 5번째네요 친 언니처럼 챙겨주셔서 많이 밝아졌어요 정말 감사해요."
+            android:textColor="#000000"
+            android:textSize="38px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="40px"
+            android:layout_marginRight="50px"
+            android:layout_marginBottom="40px"
+            android:background="#d2d2d2" />
+
+        <TextView
+            style="@style/TitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50px"
+            android:text="Rachel Sherilyn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50px"
+            android:text="2019.07월\n"
+            android:textSize="40px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50px"
+            android:paddingRight="50px"
+            android:text="누구에게도 말하지 못하는 내향적인 성격도 그렇고 제 자신의 문제라고만 생각해서 혼자 앓기를 2년..너무 힘들다는 생각에 선생님을 만나 상담하기를 벌써 5번째네요 친 언니처럼 챙겨주셔서 많이 밝아졌어요 정말 감사해요."
+            android:textColor="#000000"
+            android:textSize="38px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="40px"
+            android:layout_marginRight="50px"
+            android:layout_marginBottom="40px"
+            android:background="#d2d2d2" />
+
+        <TextView
+            style="@style/TitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50px"
+            android:text="Rachel Sherilyn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50px"
+            android:text="2019.07월\n"
+            android:textSize="40px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50px"
+            android:paddingRight="50px"
+            android:text="누구에게도 말하지 못하는 내향적인 성격도 그렇고 제 자신의 문제라고만 생각해서 혼자 앓기를 2년..너무 힘들다는 생각에 선생님을 만나 상담하기를 벌써 5번째네요 친 언니처럼 챙겨주셔서 많이 밝아졌어요 정말 감사해요."
+            android:textColor="#000000"
+            android:textSize="38px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="40px"
+            android:layout_marginRight="50px"
+            android:layout_marginBottom="40px"
+            android:background="#d2d2d2" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50px"
+            android:paddingRight="50px">
+
+            <TextView
+                style="@style/TitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="후기 20개 읽기"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="50px"
+                android:text="♥♥♥♥♥"
+                android:textColor="#F4426F"
+                android:textSize="40px"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginTop="40px"
+            android:layout_marginBottom="30px"
+            android:background="#d2d2d2" />
+
+        <TextView
+            android:id="@+id/reservation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginBottom="30px"
+            android:background="@drawable/btn_selector"
+            android:gravity="center"
+            android:paddingTop="50px"
+            android:paddingBottom="50px"
+            android:tag="B"
+            android:text="예약하기"
+            android:textColor="#FFFFFF"
+            android:textSize="50px"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>
